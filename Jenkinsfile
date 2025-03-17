@@ -22,7 +22,7 @@ pipeline{
         stage('Test appp'){
             steps{
                 sh 'sleep 5'
-                sh 'curl -i http://app-python:8000'
+                sh 'curl -i http://http://localhost:8000'
             }
         }
         stage('Stop app'){
