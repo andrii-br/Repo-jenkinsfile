@@ -8,4 +8,4 @@ COPY . /app/
 
 EXPOSE 8000:8000
 
-CMD [ "python", "app,py" ]
+CMD [ "python", "/app/app.py" ]
