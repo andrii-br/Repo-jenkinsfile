@@ -10,7 +10,7 @@ pipeline{
         stage('Build Docker image'){
             steps{
                 echo "========start build========"
-                sh 'dcoker compose build -t . app-jenkins:1.0'
+                sh 'dcoker compose build'
             }
         }
         stage('Run docker conteiner'){
