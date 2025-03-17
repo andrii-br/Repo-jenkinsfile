@@ -4,7 +4,7 @@ pipeline{
         stage('Clone Repository from GitHub'){
             steps{
                 echo "========clone start========"
-                git 'https://github.com/andrii-br/Repo-jenkinsfile.git'
+                git branch: 'main', url: 'https://github.com/andrii-br/Repo-jenkinsfile.git'
             }
         }    
         stage('Build Docker image'){
