@@ -10,7 +10,7 @@ pipeline{
         stage('Build Docker image'){
             steps{
                 echo "========start build========"
-                sh 'dcoker compose build'
+                sh 'docker compose build'
             }
         }
         stage('Run docker conteiner'){
